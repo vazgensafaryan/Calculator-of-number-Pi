@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Pi calculator</title>
+</head>
+
+<body>
+	<h1 id="headText">Calculator&nbsp;&nbsp;of&nbsp;&nbsp;number&nbsp;&nbsp;Pi</h1>
+	<main>
+		<div id="parameters">
+			<form>
+				<h2 id="input">Input:</h2><br>
+				<h3>Number of points:</h3><label for="number_of_points"></label><input type="text" id="number_of_points"><br><br>
+				<h3>Color Inside:</h3>
+				<label for="colorInside"></label><select name="colorInside" id="colorInside">
+					<option value="black" selected>Black</option>
+					<option value="green">Green</option>
+					<option value="red">Red</option>
+					<option value="blue">Blue</option>
+				</select>
+				<br><br>
+				<h3>Color Outside:</h3>
+				<label for="colorOutside"></label><select name="colorOutside" id="colorOutside">
+					<option value="black">Black</option>
+					<option value="green">Green</option>
+					<option value="red" selected>Red</option>
+					<option value="blue">Blue</option>
+				</select>
+				<br><br><br><br><hr><br><br><br>
+				<h2 id="res">Result:</h2><br>
+				<h3>Number of points inside the circle:</h3><label for="inside"></label><input type="text" id="inside"><br><br>
+				<h3>Number of points outside of the circle:</h3><label for="outside"></label><input type="text" id="outside"><br><br>
+				<h3>Pi equals:</h3><label for="result"></label><input type="text" id="result">
+			</form>
+			<br><br>
+			<button id="calcButton" onclick="drawGraphic()">CALCULATE</button>
+		</div>
+		<div id="system">
+			<div id="numbers">
+				<p id="O">0<p>
+				<p id="h1">1<p>
+				<p id="v1">1<p>
+			</div>
+			<div id="coordinates"></div>
+			<div id="circle"></div>
+			<div id="square"></div>
+		</div>
+	</main>
+	<script src="script.js"></script>
+</body>

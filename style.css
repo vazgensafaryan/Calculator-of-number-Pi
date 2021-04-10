@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	outline: none;
+}
+
+main {
+	display: flex;
+}
+
+#parameters {
+	background-color: #a13c35;
+	padding: 20px;
+	color: white;
+	box-shadow: 8px 0px 26px -2px rgba(0,0,0,0.75);
+}
+
+#system {
+	padding-left: 100px;
+	padding-top: 50px;
+}
+
+#coordinates {
+	width: 700px;
+	height: 700px;
+	border-width: 0.5em;
+	border-left: solid;
+	border-top: solid;
+}
+
+#circle {
+	position: relative;
+	bottom: 700px;
+	width: 500px;
+	height: 500px;
+	border-radius: 0 0 100% 0;
+	border-width: 1px;
+	border-style: solid;
+}
+
+#square {
+	position: relative;
+	bottom: 1201px;
+	left: 1px;
+	width: 500px;
+	height: 500px;
+	border-width: 1px;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+}
+
+#O {
+	position: absolute;
+	font-size: 18px;
+}
+
+#h1 {
+	position: absolute;
+	padding-left: 498px;
+	font-size: 18px;
+}
+
+#v1 {
+	position: relative;
+	top: 515px;
+	right: 15px;
+	font-size: 18px;
+}
+
+#headText {
+	text-align: center;
+	background-color: #252638;
+	color: white;
+	letter-spacing: 1px;
+	padding: 10px;
+}
+
+#calcButton {
+	width: 120px;
+	height: 60px;
+	background-color: #252650;
+	color: white;
+	border-radius: 10px;
+	border-style: solid;
+	letter-spacing: 1px;
+	transition: 0.3s;
+}
+
+#calcButton:hover {
+	background-color: #252638;
+	transition: 0.3s;
+}
+
+#calcButton:active {
+	border-color: black;
+}
